@@ -6,8 +6,8 @@ export default function CustomProjectCardSkeleton() {
       
       {/* Image Skeleton */}
       <div className="relative w-full h-[40%] md:h-[60%] bg-neutral-800 rounded-md animate-pulse">
-        <span className="absolute top-2 right-2 px-3 py-1 text-sm rounded-md bg-neutral-950 text-neutral-400 border border-neutral-700">
-          <div className="bg-orange-500 size-2 rounded-full relative z-0 mr-2 inline-block">
+        <span className="absolute top-2 right-2 z-10 px-3 py-1 text-sm rounded-md bg-neutral-950 text-neutral-400 border border-neutral-700">
+          <div className="bg-orange-500 size-2 rounded-full relative mr-2 inline-block">
             <div className="absolute inset-0 bg-orange-500 rounded-full animate-ping -z-10"></div>
           </div>
           building

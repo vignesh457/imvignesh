@@ -58,7 +58,7 @@ export default function HeaderSection() {
           showCursor={true}
           cursorClassName="text-neutral-600 font-medium"
           cursorCharacter="|"
-          className="text-4xl font-bold text-neutral-800 md:text-5xl"
+          className="text-4xl font-bold text-neutral-800 md:text-5xl overflow-clip"
         />
         <DockerBar />
     </section>
