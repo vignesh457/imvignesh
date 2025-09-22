@@ -1,11 +1,10 @@
-import { ShineBorder } from "../ui/shine-border";
 import { FaCode, FaLocationDot, FaSuitcase } from "react-icons/fa6";
 import { FaCalendarAlt } from "react-icons/fa";
 
 export default function CustomExpCard({content}: {content: any}) {
   return (
-    <div className="bg-neutral-900/50 backdrop-blur-sm rounded-xl border border-neutral-800 hover:border-neutral-500/40 overflow-hidden transition-all duration-500 shadow-lg shadow-black/40">
-      <ShineBorder shineColor={["#79FFE1", "#0E7C86", "#0883A3"]} />
+    <div className="bg-neutral-900/50 backdrop-blur-xs rounded-xl border border-neutral-800 border-b-0 overflow-hidden transition-all duration-500">
+      {/* <ShineBorder shineColor={["#79FFE1", "#0E7C86", "#0883A3"]} /> */}
       <div className="p-6">
         <h3 className="text-2xl font-bold text-neutral-200 mb-2">
           {content.position}

@@ -1,12 +1,15 @@
 import { projectData } from "@/lib/data";
 import CustomProjectCard from "../ui/custom-project-card";
 import CustomProjectCardSkeleton from "../ui/custom-project-card-skelton";
+import { Highlighter } from "../ui/highlighter";
 
 export default function ProjectSection() {
   return (
     <section id="projects" className="w-full min-h-screen py-16">
       <h1 className="text-3xl md:text-5xl text-center font-bold mb-4 px-6 md:px-16">
-        Projects
+        <Highlighter action="underline" color="#FF9800">
+          Projects
+        </Highlighter>
       </h1>
 
       <div className="relative w-full h-full flex flex-col pt-[40px] gap-20 mt-4 md:mt-4 px-6 md:px-16">

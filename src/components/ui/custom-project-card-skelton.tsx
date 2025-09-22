@@ -2,7 +2,7 @@ import { IoIosConstruct } from "react-icons/io";
 
 export default function CustomProjectCardSkeleton() {
   return (
-    <div className="h-[460px] w-[90%] p-6 md:w-[50%] flex flex-col rounded-xl overflow-hidden bg-neutral-950 gap-4 border border-neutral-700">
+    <div className="h-[460px] w-[90%] p-6 md:w-[50%] flex flex-col rounded-xl overflow-hidden bg-neutral-950 gap-4 border border-neutral-800">
       
       {/* Image Skeleton */}
       <div className="relative w-full h-[40%] md:h-[60%] bg-neutral-800 rounded-md animate-pulse">

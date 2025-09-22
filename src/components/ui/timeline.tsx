@@ -1,7 +1,7 @@
 "use client";
 import {
-  useScroll,
-  useTransform,
+  // useScroll,
+  // useTransform,
   motion,
 } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
@@ -24,10 +24,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     }
   }, [ref]);
 
-  const { scrollYProgress } = useScroll();
+  // const { scrollYProgress } = useScroll();
 
-  const heightTransform = height;
-  const opacityTransform = 1;
+  // const heightTransform = height;
+  // const opacityTransform = 1;
 
   return (
     <div

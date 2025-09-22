@@ -22,7 +22,7 @@ export default function Navbar() {
 
       {/* Desktop Navigation Links */}
       <nav className="hidden md:flex gap-10 text-neutral-500">
-        {["home", "skills", "projects", "experience", "contact", "footer"].map((section) => (
+        {["home", "skills", "projects", "experience", "contact"].map((section) => (
           <button
             key={section}
             onClick={() => scrollToSection(section)}
@@ -66,7 +66,7 @@ export default function Navbar() {
       {/* Mobile dropdown menu */}
       {menuOpen && (
         <nav className="absolute top-[65px] left-0 w-full bg-neutral-900 backdrop-blur-md border-t border-neutral-800 flex flex-col p-4 md:hidden backdrop:blur-2xl">
-          {["home", "skills", "projects", "experience", "contact", "footer"].map((section) => (
+          {["home", "skills", "projects", "experience", "contact"].map((section) => (
             <button
               key={section}
               onClick={() => scrollToSection(section)}

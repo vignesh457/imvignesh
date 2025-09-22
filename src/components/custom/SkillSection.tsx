@@ -1,12 +1,17 @@
 import { OrbitingCircles } from "@/components/magicui/orbiting-circles";
 import { backendSkillData, frontendSkillData } from "@/lib/data";
 import yoga from '@/assets/yoga.webp';
+import { Highlighter } from "../ui/highlighter";
 
 
 export function SkillSection() {
   return (
     <section id='skills' className="w-full py-16">
-      <h1 className="text-3xl md:text-5xl font-bold mb-4 text-center">Skills</h1>
+      <h1 className="text-3xl md:text-5xl font-bold mb-4 text-center">
+        <Highlighter action="underline" color="#FF9800">
+          Skills
+        </Highlighter>
+      </h1>
       {/* Outer Orbit */}
       <div className="relative flex md:min-h-screen h-[400px] w-full flex-col items-center justify-center text-white">
         <OrbitingCircles radius={window.innerWidth<=600?175:250} speed={1} iconSize={50}>
