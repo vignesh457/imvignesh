@@ -7,7 +7,7 @@ export default function CustomExpCard({content}: {content: any}) {
     <div className="bg-neutral-900/50 backdrop-blur-sm rounded-xl border border-neutral-800 hover:border-neutral-500/40 overflow-hidden transition-all duration-500 shadow-lg shadow-black/40">
       <ShineBorder shineColor={["#79FFE1", "#0E7C86", "#0883A3"]} />
       <div className="p-6">
-        <h3 className="text-2xl font-bold text-white mb-2">
+        <h3 className="text-2xl font-bold text-neutral-200 mb-2">
           {content.position}
         </h3>
         <div className="flex flex-wrap items-center gap-3 text-neutral-500 text-sm">
@@ -53,7 +53,7 @@ export default function CustomExpCard({content}: {content: any}) {
             {content.technologies.map((item: string, index: number) => (
               <span
                 key={index}
-                className="px-2 py-1 text-xs rounded-md bg-neutral-800/80 text-neutral-300 border border-neutral-700/50"
+                className="px-2 py-1 text-xs rounded-md bg-neutral-800/80 text-neutral-400 border border-neutral-700/50"
               >
                 {item}
               </span>

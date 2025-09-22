@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
+import icon from "@/assets/icon.svg"
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +15,8 @@ export default function Navbar() {
   return (
     <header className="fixed w-full top-0 left-0 z-50 bg-neutral-950/80 backdrop-blur-sm border-b border-neutral-800 flex items-center justify-between px-6 md:px-16 h-[65px]">
       {/* Logo or Brand Name */}
-      <div className="text-white text-xl font-bold cursor-pointer">
+      <div className="text-neutral-400 text-xl font-bold cursor-pointer">
+        <img src={icon} alt="V" className="inline w-8 h-8 mr-2" />
         Vignesh
       </div>
 
@@ -63,7 +65,7 @@ export default function Navbar() {
 
       {/* Mobile dropdown menu */}
       {menuOpen && (
-        <nav className="absolute top-[65px] left-0 w-full bg-neutral-900/90 backdrop-blur-md border-t border-neutral-800 flex flex-col p-4 md:hidden">
+        <nav className="absolute top-[65px] left-0 w-full bg-neutral-900 backdrop-blur-md border-t border-neutral-800 flex flex-col p-4 md:hidden backdrop:blur-2xl">
           {["home", "skills", "projects", "experience", "contact", "footer"].map((section) => (
             <button
               key={section}

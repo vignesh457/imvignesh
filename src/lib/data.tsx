@@ -1,26 +1,16 @@
 import React from "react";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { SiCodechef, SiLeetcode } from "react-icons/si";
+import { FaLinkedin, FaGithub, FaJsSquare, FaJava, FaNodeJs, FaPython } from "react-icons/fa";
+import { SiCodechef, SiLeetcode, SiSpring, SiExpress, SiMongodb, SiTypescript, SiTailwindcss, SiMysql, SiPostgresql, SiRedux, SiGithub, SiDocker, SiReact, SiNextdotjs } from "react-icons/si";
 import accenture from "@/assets/accenture.svg";
 import tcs from "@/assets/tcs.svg";
 import infosys from "@/assets/infosys.svg";
 import virtusa from "@/assets/virtusa.svg";
-import { FaJsSquare, FaJava, FaNodeJs, FaPython } from "react-icons/fa";
-import {
-  SiSpring,
-  SiExpress,
-  SiMongodb,
-  SiTypescript,
-  SiTailwindcss,
-  SiMysql,
-  SiPostgresql,
-  SiRedux,
-  SiGithub,
-  SiDocker,
-  SiReact,
-  SiNextdotjs,
-} from "react-icons/si";
+import techm from "@/assets/techm.svg";
+import discordBanner from "@/assets/discord-banner.webp";
+import artnookBanner from "@/assets/artnook-banner.webp";
+import spotifyBanner from "@/assets/spotify-banner.webp";
+import numberhuntBanner from "@/assets/numberhunt-banner.webp";
 
 export type ContactItem = {
   title: string;
@@ -28,7 +18,41 @@ export type ContactItem = {
   href: string;
 };
 
-// Provide icon as JSX element directly
+export type CompanyLogoItem = {
+  node: React.ReactNode;
+  title: string;
+  href: string;
+};
+
+export type SkillIcon = {
+  Icon: React.ComponentType<{ className?: string; size?: number | string }>;
+  title: string;
+  colorClass: string;
+};
+
+export type ExperienceContent = {
+  position: string;
+  company: string;
+  location: string;
+  date: string;
+  keyResponsibilities: string[];
+  technologies: string[];
+};
+
+export type ExperienceItem = {
+  title: string;
+  content: ExperienceContent;
+};
+
+export type ProjectItem = {
+  title: string;
+  image: React.ReactNode;
+  description: string;
+  technologies: string[];
+  live_url: string;
+  github_url: string;
+};
+
 const contactData: ContactItem[] = [
   {
     title: "Twitter",
@@ -57,10 +81,19 @@ const contactData: ContactItem[] = [
   },
 ];
 
-const clearCompanyLogoData = [
+const clearCompanyLogoData: CompanyLogoItem[] = [
   {
     node: (
-      <div>
+      <div className="w-[150px] h-[100px] flex justify-center">
+        <img src={virtusa} alt="virtusa" className="w-full brightness-50" />
+      </div>
+    ),
+    title: "Virtusa",
+    href: "https://www.linkedin.com/in/vigneshwar-reddy-donapati-516a2b202",
+  },
+  {
+    node: (
+      <div className="w-[150px] h-[100px] flex justify-center">
         <img src={infosys} alt="infosys" className="w-[150px]" />
       </div>
     ),
@@ -70,7 +103,7 @@ const clearCompanyLogoData = [
   {
     node: (
       <div className="w-[150px] h-[100px] flex justify-center">
-        <img src={tcs} alt="tcs" className="w-full" />
+        <img src={tcs} alt="tcs" className="w-full brightness-70" />
       </div>
     ),
     title: "TCS",
@@ -79,10 +112,10 @@ const clearCompanyLogoData = [
   {
     node: (
       <div className="w-[150px] h-[100px] flex justify-center">
-        <img src={virtusa} alt="virtusa" className="w-full" />
+        <img src={techm} alt="accenture" className="w-full" />
       </div>
     ),
-    title: "Virtusa",
+    title: "Tech Mahindra",
     href: "https://www.linkedin.com/in/vigneshwar-reddy-donapati-516a2b202",
   },
   {
@@ -96,7 +129,7 @@ const clearCompanyLogoData = [
   },
 ];
 
-const backendSkillData = [
+const backendSkillData: SkillIcon[] = [
   { Icon: FaJava, title: "Java", colorClass: "text-red-400" },
   { Icon: SiSpring, title: "Spring Boot", colorClass: "text-green-500" },
   { Icon: SiExpress, title: "ExpressJS", colorClass: "text-white" },
@@ -109,7 +142,7 @@ const backendSkillData = [
   { Icon: SiDocker, title: "Docker", colorClass: "text-blue-400" },
 ];
 
-const frontendSkillData = [
+const frontendSkillData: SkillIcon[] = [
   { Icon: SiReact, title: "ReactJS", colorClass: "text-blue-400" },
   { Icon: SiNextdotjs, title: "NextJS", colorClass: "text-white" },
   { Icon: SiTypescript, title: "TypeScript", colorClass: "text-blue-600" },
@@ -118,7 +151,7 @@ const frontendSkillData = [
   { Icon: FaJsSquare, title: "JavaScript", colorClass: "text-yellow-400" },
 ];
 
-const experienceData = [
+const experienceData: ExperienceItem[] = [
   {
     title: "Nov 2024",
     content: {
@@ -150,10 +183,118 @@ const experienceData = [
   },
 ];
 
+const projectData: ProjectItem[] = [
+  {
+    title: "Dummy Project",
+    image: (
+      <img 
+          src={numberhuntBanner}
+          alt="numberhuntBanner"
+          className="h-full object-cover rounded-xl"
+        />
+    ), // Add image JSX or import here if available
+    description: "Multiplayer reflex mobile game with real-time Socket.IO gameplay, supporting solo and online modes, animations, global leaderboard, seamless UI, and released on PhonePe Indus Appstore.",
+    technologies: [
+      "React Native",
+      "TS",
+      "Socket.IO",
+      "Node.js",
+      "Express",
+      "Redux",
+      "PostgreSQL"
+    ],
+    live_url: "", // Add if any
+    github_url: "https://github.com/vignesh457/number-hunt" // Add repo link if any
+  },
+  {
+    title: "NumberHunt",
+    image: (
+      <img 
+          src={numberhuntBanner}
+          alt="numberhuntBanner"
+          className="h-full object-cover rounded-xl"
+        />
+    ), // Add image JSX or import here if available
+    description: "Multiplayer reflex mobile game with real-time Socket.IO gameplay, supporting solo and online modes, animations, global leaderboard, seamless UI, and released on PhonePe Indus Appstore.",
+    technologies: [
+      "React Native",
+      "TS",
+      "Socket.IO",
+      "Node.js",
+      "Express",
+      "Redux",
+      "PostgreSQL"
+    ],
+    live_url: "", // Add if any
+    github_url: "https://github.com/vignesh457/number-hunt" // Add repo link if any
+  },
+  {
+    title: "ArtNook",
+    image: (
+      <img 
+          src={artnookBanner}
+          alt="artnookBanner"
+          className="w-full object-cover rounded-xl"
+        />
+    ),
+    description: "Responsive full-stack artist showcase with secure authentication, user authorization, profile management, artwork CRUD operations, enhanced performance, UI filters, and search features.",
+    technologies: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "JWT Authentication",
+      "RESTful APIs"
+    ],
+    live_url: "https://artnook.vercel.app",
+    github_url: "https://github.com/vignesh457/makeurart"
+  },
+  {
+    title: "Discord Clone",
+    image: (
+      <img 
+          src={discordBanner}
+          alt="discordBanner"
+          className="h-full object-cover rounded-xl"
+        />
+    ),
+    description: "Built a responsive real-time chat SPA using React and Firebase with Google login, Redux state management, enabling isolated user conversation channels and seamless, intuitive UI/UX.",
+    technologies: [
+      "React",
+      "Firebase",
+      "Redux",
+      "JWT"
+    ],
+    live_url: "https://discord-vignesh.vercel.app",
+    github_url: "https://github.com/vignesh457/discord-clone"
+  },
+  {
+    title: "Spotify Clone",
+    image: (
+      <img 
+          src={spotifyBanner}
+          alt="spotifyBanner"
+          className="h-full object-cover rounded-xl"
+        />
+    ),
+    description: "Built a responsive Spotify clone with HTML, CSS, and JavaScript featuring asynchronous play controls, volume, progress bar, search, and interactive DOM-based event handling.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Asynchronous Programming",
+      "DOM Manipulation"
+    ],
+    live_url: "https://spotify-vignesh.netlify.app",
+    github_url: "https://github.com/vignesh457/spotify"
+  }
+];
+
+
 export {
   contactData,
   clearCompanyLogoData,
   backendSkillData,
   frontendSkillData,
   experienceData,
+  projectData,
 };

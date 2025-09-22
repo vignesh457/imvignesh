@@ -48,7 +48,7 @@ export default function HeaderSection() {
         </div>
         <p className="text-lg md:text-xl text-neutral-700 dark:text-neutral-300 max-w-3xl text-center">
           <TextAnimate animation="blurInUp" by="word" duration={3}>
-            I'm a Full Stack Developer skilled in front-end and back-end technologies, passionate about building innovative projects. Always open to exploring new ideas, collaborations, and discussions. Let's connect and create something amazing together!😉
+            Let's all work together to solve inefficiencies in the Indian system and build a stronger nation—where population is not a problem but a powerful driver of India's rapid and expansive growth.
           </TextAnimate>
         </p>
         <TextType 
@@ -56,8 +56,9 @@ export default function HeaderSection() {
           typingSpeed={100}
           pauseDuration={1000}
           showCursor={true}
-          cursorCharacter="_"
-          className="text-4xl font-bold text-neutral-800 md:text-6xl"
+          cursorClassName="text-neutral-600 font-medium"
+          cursorCharacter="|"
+          className="text-4xl font-bold text-neutral-800 md:text-5xl"
         />
         <DockerBar />
     </section>
