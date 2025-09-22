@@ -14,7 +14,7 @@ export default function ContactSection() {
     >
       <div className="relative flex flex-col justify-center items-center w-[95%] md:w-[40%] h-[320px] bg-neutral-900/80 rounded-xl overflow-hidden border border-neutral-800 gap-2 p-4 transition-all duration-500">
         {/* <ShineBorder shineColor={["#79FFE1", "#0E7C86", "#adf374"]} /> */}
-        <h1 className="text-4xl font-semibold mb-4 text-neutral-200">
+        <h1 className="text-3xl md:text-4xl font-semibold mb-4 text-neutral-200">
           <Highlighter action="underline" color="#FF9800">
             Contact me
           </Highlighter>
