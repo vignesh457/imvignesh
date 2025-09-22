@@ -25,7 +25,7 @@ export default function HeaderSection() {
             </AnimatedShinyText>
           </div>
         </div>
-        <h1 className="text-7xl font-bold tracking-tighter text-center">
+        <h1 className="text-6xl font-bold tracking-tighter text-center">
           Hi, I'm <AuroraText>Vignesh</AuroraText>
         </h1>
         <div className="flex flex-wrap justify-center items-center">
@@ -46,7 +46,7 @@ export default function HeaderSection() {
           </span>
           <span className="text-4xl font-bold tracking-tighter inline-block text-neutral-300">App from Scratch</span>
         </div>
-        <p className="text-lg md:text-xl text-neutral-700 dark:text-neutral-300 max-w-3xl text-center px-2">
+        <p className="text-lg md:text-xl text-neutral-700 dark:text-neutral-300 max-w-3xl text-center px-4">
           <TextAnimate animation="blurInUp" by="word" duration={3}>
             Let's all work together to solve inefficiencies in the Indian system and build a stronger nation—where population is not a problem but a powerful driver of India's rapid and expansive growth.
           </TextAnimate>

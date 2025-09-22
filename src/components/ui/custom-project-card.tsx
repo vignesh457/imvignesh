@@ -26,7 +26,7 @@ export default function CustomProjectCard({ content }: { content: ProjectItem}) 
             rel="noopener noreferrer"
             className="inline-block bg-neutral-800 hover:bg-neutral-700 text-neutral-300 text-sm px-4 py-2 rounded-xl transition"
           >
-            <FaExternalLinkAlt className="inline"/>
+            <FaExternalLinkAlt className="inline w-4 h-4"/>
             <span className="hidden md:inline ml-2">Live</span>
           </a>
           <a
@@ -35,7 +35,7 @@ export default function CustomProjectCard({ content }: { content: ProjectItem}) 
             rel="noopener noreferrer"
             className="inline-block bg-neutral-800 hover:bg-neutral-700 text-neutral-300 text-sm px-4 py-2 rounded-xl transition"
           >
-            <FaGithub className="inline" />
+            <FaGithub className="inline w-5 h-5" />
             <span className="hidden md:inline ml-2">GitHub</span>
           </a>
         </div>

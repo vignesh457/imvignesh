@@ -249,7 +249,7 @@ const projectData: ProjectItem[] = [
     github_url: "https://github.com/vignesh457/makeurart"
   },
   {
-    title: "Discord Clone",
+    title: "Discord",
     image: (
       <img 
           src={discordBanner}
@@ -268,7 +268,7 @@ const projectData: ProjectItem[] = [
     github_url: "https://github.com/vignesh457/discord-clone"
   },
   {
-    title: "Spotify Clone",
+    title: "Spotify",
     image: (
       <img 
           src={spotifyBanner}

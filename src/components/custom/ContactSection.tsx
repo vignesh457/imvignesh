@@ -2,7 +2,6 @@ import React from "react";
 import { DockerBar } from "../ui/floating-dock";
 import { GoMail } from "react-icons/go";
 import { IoLocationOutline } from "react-icons/io5";
-import { ShineBorder } from "../ui/shine-border";
 import { Highlighter } from "../ui/highlighter";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
@@ -14,7 +13,7 @@ export default function ContactSection() {
       className="w-full py-16 px-4 flex justify-center items-center"
     >
       <div className="relative flex flex-col justify-center items-center w-[90%] md:w-[40%] h-[320px] bg-neutral-900/80 rounded-xl overflow-hidden border border-neutral-800 gap-2 p-4 transition-all duration-500">
-        <ShineBorder shineColor={["#79FFE1", "#0E7C86", "#adf374"]} />
+        {/* <ShineBorder shineColor={["#79FFE1", "#0E7C86", "#adf374"]} /> */}
         <h1 className="text-4xl font-semibold mb-4 text-neutral-200">
           <Highlighter action="underline" color="#FF9800">
             Contact me
