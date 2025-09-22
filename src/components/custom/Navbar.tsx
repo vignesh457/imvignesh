@@ -39,7 +39,7 @@ export default function Navbar() {
 
       {/* Mobile menu button */}
       <button
-        className="ml-auto md:hidden text-neutral-300 hover:text-neutral-100 focus:outline-none"
+        className="ml-auto md:hidden text-neutral-400 hover:text-neutral-200 focus:outline-none"
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Toggle menu"
       >

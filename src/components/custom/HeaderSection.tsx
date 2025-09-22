@@ -8,7 +8,7 @@ import { DockerBar } from "../ui/floating-dock";
 
 export default function HeaderSection() {
   return (
-    <section id='home' className='w-full min-h-screen pt-20 pb-16 flex flex-col items-center justify-center px-6 md:px-16 gap-6'>
+    <section id='home' className='w-full min-h-screen pt-20 pb-16 flex flex-col items-center justify-center px-2 md:px-16 gap-5'>
         <div className="z-10 flex items-center justify-center">
           <div
             className={cn(
@@ -46,7 +46,7 @@ export default function HeaderSection() {
           </span>
           <span className="text-4xl font-bold tracking-tighter inline-block text-neutral-300">App from Scratch</span>
         </div>
-        <p className="text-lg md:text-xl text-neutral-700 dark:text-neutral-300 max-w-3xl text-center">
+        <p className="text-lg md:text-xl text-neutral-700 dark:text-neutral-300 max-w-3xl text-center px-2">
           <TextAnimate animation="blurInUp" by="word" duration={3}>
             Let's all work together to solve inefficiencies in the Indian system and build a stronger nation—where population is not a problem but a powerful driver of India's rapid and expansive growth.
           </TextAnimate>

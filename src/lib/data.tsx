@@ -234,7 +234,7 @@ const projectData: ProjectItem[] = [
       <img 
           src={artnookBanner}
           alt="artnookBanner"
-          className="w-full object-cover rounded-xl"
+          className="h-full object-cover rounded-xl"
         />
     ),
     description: "Responsive full-stack artist showcase with secure authentication, user authorization, profile management, artwork CRUD operations, enhanced performance, UI filters, and search features.",

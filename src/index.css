@@ -19,6 +19,9 @@
     margin: 0;
     padding: 0;
   }
+  :root {
+    color-scheme: dark light;
+  }
 
   html {
     font-family: "Poppins", sans-serif;
