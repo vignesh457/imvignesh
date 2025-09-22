@@ -15,7 +15,7 @@ export function SkillSection() {
             <div key={title} className="flex items-center justify-center w-[50px] h-[50px] rounded-full bg-radial from-neutral-800 to-neutral-900">
             <Icon
               key={title}
-              title={title}
+              // title={title}
               className={`${colorClass}`}
               size={30}
             />
@@ -30,7 +30,7 @@ export function SkillSection() {
             <div key={title} className="flex items-center justify-center w-[50px] h-[50px] rounded-full bg-radial from-neutral-800 to-neutral-900">
             <Icon
               key={title}
-              title={title}
+              // title={title}
               className={`${colorClass}`}
               size={30}
             />
