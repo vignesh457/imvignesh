@@ -10,7 +10,7 @@ import ContactSection from "./components/custom/ContactSection";
 import ProjectSection from "./components/custom/ProjectSection";
 import FooterSection from "./components/custom/FooterSection";
 import ClearCompanySection from "./components/custom/CustomLogoLoop";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/react'
 
 function App() {
   const mainRef = useRef<HTMLDivElement>(null);
