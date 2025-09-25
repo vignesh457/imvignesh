@@ -10,6 +10,7 @@ import ContactSection from "./components/custom/ContactSection";
 import ProjectSection from "./components/custom/ProjectSection";
 import FooterSection from "./components/custom/FooterSection";
 import ClearCompanySection from "./components/custom/CustomLogoLoop";
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   const mainRef = useRef<HTMLDivElement>(null);
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="relative w-full h-screen bg-neutral-950 text-white">
       {/* Dots in the background */}
+      <Analytics />
       <DotPattern
         className={cn(
           "opacity-40 dark:opacity-60",

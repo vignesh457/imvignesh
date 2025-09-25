@@ -7,7 +7,10 @@ export default function CustomProjectCard({ content }: { content: ProjectItem}) 
     <div className="h-[460px] w-[90%] p-6 md:w-[50%] flex flex-col rounded-xl overflow-hidden bg-neutral-950 gap-4 border-1 border-neutral-800">
       
       {/* Project Image */}
-      <div className="relative w-full h-[40%] md:h-[60%] flex items-center justify-center overflow-hidden rounded-xl">
+      <div 
+        onClick={() => window.open(content.live_url, "_blank")}
+        className="relative w-full h-[40%] md:h-[60%] flex items-center cursor-pointer justify-center overflow-hidden rounded-xl"
+      >
         {content.image}
         <span className="absolute top-2 right-2 px-3 py-1 text-sm rounded-md bg-neutral-950 text-neutral-400 border border-neutral-700">
           <div className="bg-green-500 size-2 rounded-full relative z-0 mr-2 inline-block">

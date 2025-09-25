@@ -1,18 +1,18 @@
-import { IoIosConstruct } from "react-icons/io";
+import comingSoon from "@/assets/coming-soon.svg";
 
 export default function CustomProjectCardSkeleton() {
   return (
     <div className="h-[460px] w-[90%] p-6 md:w-[50%] flex flex-col rounded-xl overflow-hidden bg-neutral-950 gap-4 border border-neutral-800">
       
       {/* Image Skeleton */}
-      <div className="relative w-full h-[40%] md:h-[60%] bg-neutral-800 rounded-md animate-pulse">
+      <div className="relative w-full h-[40%] md:h-[60%] bg-neutral-800 rounded-md p-4">
         <span className="absolute top-2 right-2 z-10 px-3 py-1 text-sm rounded-md bg-neutral-950 text-neutral-400 border border-neutral-700">
           <div className="bg-orange-500 size-2 rounded-full relative mr-2 inline-block">
             <div className="absolute inset-0 bg-orange-500 rounded-full animate-ping -z-10"></div>
           </div>
           building
         </span>
-        <IoIosConstruct className="w-36 h-36 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-neutral-700" />
+        <img src={comingSoon} alt="coming soon" className="w-full h-full object-fit" />
       </div>
       
       <div className="flex flex-col gap-4 h-[60%] md:h-[40%]">
