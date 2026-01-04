@@ -4,12 +4,12 @@ import { FaGithub } from "react-icons/fa6";
 
 export default function CustomProjectCard({ content }: { content: ProjectItem}) {
   return (
-    <div className="h-[460px] w-[90%] p-6 md:w-[50%] flex flex-col rounded-xl overflow-hidden bg-neutral-950 gap-4 border-1 border-neutral-800">
+    <div className="h-[460px] w-[90%] md:w-[50%] flex flex-col rounded-xl overflow-hidden bg-neutral-950 gap-4 border-1 border-neutral-800">
       
       {/* Project Image */}
       <div 
         onClick={() => window.open(content.live_url, "_blank")}
-        className="relative w-full h-[40%] md:h-[60%] flex items-center cursor-pointer justify-center overflow-hidden rounded-xl"
+        className="relative w-full h-[40%] md:h-[60%] flex items-center cursor-pointer justify-center overflow-hidden rounded-t-xl"
       >
         {content.image}
         <span className="absolute top-2 right-2 px-3 py-1 text-sm rounded-md bg-neutral-950 text-neutral-400 border border-neutral-700">
@@ -20,8 +20,8 @@ export default function CustomProjectCard({ content }: { content: ProjectItem}) 
         </span>
       </div>
 
-      <div className="flex flex-col gap-1 h-[60%] md:h-[40%]">
-        <div className="flex justify-center align-center gap-4 mb-2">
+      <div className="flex flex-col p-4 gap-1 h-[60%] md:h-[40%]">
+        <div className="flex justify-center align-center gap-4 mb-1">
           <h3 className="text-xl md:text-2xl font-bold text-neutral-200 flex-1">{content.title}</h3>
           <a
             href={content.live_url}

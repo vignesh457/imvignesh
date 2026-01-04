@@ -160,11 +160,11 @@ const experienceData: ExperienceItem[] = [
       location: "Hyderabad",
       date: "Nov 2024 - Present",
       keyResponsibilities: [
-        "Developed and maintained cloud-based microservices and web applications for DEFRA’s platform using Java,Node.js, and Azure services, ensuring 24×7 system stability",
-        "Implemented zero-downtime deployments with Blue-Green strategies in Azure DevOps, set up proactive monitoring and alerting, and resolved critical production issues to improve reliability and user experience.",
-        "Built and optimized event-driven integrations via Azure Service Bus and Dynamics 365, adding automated dead-letter queue handling and replay mechanisms that improved data accuracy and workflow efficiency.",
+        "Developed and maintained microservices using Spring Boot and React, improving reliability for a food import/export platform handling critical trade workflows.",
+        "Debugged and resolved production issues by tracing requests across backend services, SQL DB, Azure Service Bus, and React UI, contributing code fixes and preventing recurrence.",
+        "Collaborated with cross-functional teams during release cycles, driving root-cause analysis and code-level improvements, ensuring smooth deployments with minimal downtime with Blue-Green strategies.",
       ],
-      technologies: ["Java", "Spring Boot", "Drop Wizard", "SQL"],
+      technologies: ["Java", "Spring Boot", "React", "SQL"],
     },
   },
   {
@@ -190,7 +190,7 @@ const projectData: ProjectItem[] = [
       <img 
           src={numberhuntBanner}
           alt="numberhuntBanner"
-          className="h-full object-cover rounded-xl"
+          className="w-full object-cover"
         />
     ), // Add image JSX or import here if available
     description: "Multiplayer reflex mobile game with real-time Socket.IO gameplay, supporting solo and online modes, animations, global leaderboard, seamless UI, and released on PhonePe Indus Appstore.",
@@ -212,7 +212,7 @@ const projectData: ProjectItem[] = [
       <img 
           src={numberhuntBanner}
           alt="numberhuntBanner"
-          className="h-full object-cover rounded-xl"
+          className="w-full object-cover"
         />
     ), // Add image JSX or import here if available
     description: "Multiplayer reflex mobile game with real-time Socket.IO gameplay, supporting solo and online modes, animations, global leaderboard, seamless UI, and released on PhonePe Indus Appstore.",
@@ -234,7 +234,7 @@ const projectData: ProjectItem[] = [
       <img 
           src={artnookBanner}
           alt="artnookBanner"
-          className="h-full object-cover rounded-xl"
+          className="w-full object-cover"
         />
     ),
     description: "Responsive full-stack artist showcase with secure authentication, user authorization, profile management, artwork CRUD operations, enhanced performance, UI filters, and search features.",
@@ -254,7 +254,7 @@ const projectData: ProjectItem[] = [
       <img 
           src={discordBanner}
           alt="discordBanner"
-          className="h-full object-cover rounded-xl"
+          className="w-full object-cover"
         />
     ),
     description: "Built a responsive real-time chat SPA using React and Firebase with Google login, Redux state management, enabling isolated user conversation channels and seamless, intuitive UI/UX.",
@@ -273,7 +273,7 @@ const projectData: ProjectItem[] = [
       <img 
           src={spotifyBanner}
           alt="spotifyBanner"
-          className="h-full object-cover rounded-xl"
+          className="w-full object-cover"
         />
     ),
     description: "Built a responsive Spotify clone with HTML, CSS, and JavaScript featuring asynchronous play controls, volume, progress bar, search, and interactive DOM-based event handling.",
