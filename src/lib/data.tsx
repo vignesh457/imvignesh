@@ -1,6 +1,6 @@
 import React from "react";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin, FaGithub, FaJsSquare, FaJava, FaNodeJs, FaPython } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaJsSquare, FaJava, FaNodeJs, FaPython, FaAws } from "react-icons/fa";
 import { SiCodechef, SiLeetcode, SiSpring, SiExpress, SiMongodb, SiTypescript, SiTailwindcss, SiMysql, SiPostgresql, SiRedux, SiGithub, SiDocker, SiReact, SiNextdotjs } from "react-icons/si";
 import accenture from "@/assets/accenture.svg";
 import tcs from "@/assets/tcs.svg";
@@ -138,6 +138,7 @@ const backendSkillData: SkillIcon[] = [
   { Icon: SiMysql, title: "MySQL", colorClass: "text-blue-500" },
   { Icon: SiPostgresql, title: "PostgreSQL", colorClass: "text-blue-500" },
   { Icon: FaPython, title: "Python", colorClass: "text-blue-500" },
+  { Icon: FaAws , title: "AWS", colorClass: "text-orange-400" },
   { Icon: SiGithub, title: "GitHub", colorClass: "text-white" },
   { Icon: SiDocker, title: "Docker", colorClass: "text-blue-400" },
 ];
@@ -160,11 +161,11 @@ const experienceData: ExperienceItem[] = [
       location: "Hyderabad",
       date: "Nov 2024 - Present",
       keyResponsibilities: [
-        "Developed and maintained microservices using Spring Boot and React, improving reliability for a food import/export platform handling critical trade workflows.",
-        "Debugged and resolved production issues by tracing requests across backend services, SQL DB, Azure Service Bus, and React UI, contributing code fixes and preventing recurrence.",
-        "Collaborated with cross-functional teams during release cycles, driving root-cause analysis and code-level improvements, ensuring smooth deployments with minimal downtime with Blue-Green strategies.",
+        "Developed and maintained a scalable microservices application using Spring Boot, Node.js, and React to support critical import/export workflows and reliable cross-system data processing.",
+        "Troubleshot and resolved complex production incidents by tracing requests across backend services, SQL databases, Azure Service Bus DLQ, and logs, reducing issue recurrence and improving overall system reliability.",
+        "Collaborated with cross-functional teams during release cycles to drive root-cause analysis and code improvements, ensuring smooth Blue-Green deployments with minimal to zero downtime.",
       ],
-      technologies: ["Java", "Spring Boot", "React", "SQL"],
+      technologies: ["React", "Spring Boot", "Node.js", "SQL"],
     },
   },
   {
@@ -175,8 +176,8 @@ const experienceData: ExperienceItem[] = [
       location: "Hyderabad",
       date: "Mar 2024 - Nov 2024",
       keyResponsibilities: [
-        "Worked on internal tool using React.js and Node.js, streamlining workflows and improving team efficiency.",
-        "Implemented role-based authentication and integrated internal APIs for secure, reliable data management.",
+        "Developed a full-stack internal productivity tool using React.js and Node.js to automate and streamline team workflows, resulting in improved operational efficiency and reduced manual effort.",
+        "Implemented Role-Based Authentication (RBAC) and integrated secure internal APIs in Node.js, ensuring controlled data access and reliable data management across multiple user roles.",
       ],
       technologies: ["React.js", "Node.js", "MongoDB"],
     },

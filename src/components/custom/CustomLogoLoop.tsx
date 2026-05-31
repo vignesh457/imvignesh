@@ -7,7 +7,7 @@ export default function ClearCompanySection() {
     <div style={{ minHeight: '200px', position: 'relative', overflow: 'hidden'}} className='py-16'>
       <h1 className="text-3xl md:text-5xl font-bold mb-8 text-center text-neutral-200">
         <Highlighter action="underline" color="#FF9800">
-          Selected Companies
+          Cleared Companies
         </Highlighter>
       </h1>
       <LogoLoop
