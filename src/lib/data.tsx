@@ -1,7 +1,9 @@
 import React from "react";
 import { FaXTwitter } from "react-icons/fa6";
+import { DiRedis } from "react-icons/di";
+import { PiOpenAiLogo } from "react-icons/pi";
 import { FaLinkedin, FaGithub, FaJsSquare, FaJava, FaNodeJs, FaPython, FaAws } from "react-icons/fa";
-import { SiCodechef, SiLeetcode, SiSpring, SiExpress, SiMongodb, SiTypescript, SiTailwindcss, SiMysql, SiPostgresql, SiRedux, SiGithub, SiDocker, SiReact, SiNextdotjs } from "react-icons/si";
+import { SiCodechef, SiLeetcode, SiSpring, SiExpress, SiMongodb, SiTypescript, SiTailwindcss, SiMysql, SiPostgresql, SiRedux, SiGithub, SiDocker, SiReact, SiNextdotjs, SiPostman, SiApachekafka, SiGooglegemini  } from "react-icons/si";
 import accenture from "@/assets/accenture.svg";
 import tcs from "@/assets/tcs.svg";
 import infosys from "@/assets/infosys.svg";
@@ -138,9 +140,11 @@ const backendSkillData: SkillIcon[] = [
   { Icon: SiMysql, title: "MySQL", colorClass: "text-blue-500" },
   { Icon: SiPostgresql, title: "PostgreSQL", colorClass: "text-blue-500" },
   { Icon: FaPython, title: "Python", colorClass: "text-blue-500" },
-  { Icon: FaAws , title: "AWS", colorClass: "text-orange-400" },
+  { Icon: FaAws , title: "AWS", colorClass: "text-yellow-400" },
   { Icon: SiGithub, title: "GitHub", colorClass: "text-white" },
   { Icon: SiDocker, title: "Docker", colorClass: "text-blue-400" },
+  { Icon: DiRedis, title: "Redis", colorClass: "text-red-500" },
+  { Icon: SiApachekafka, title: "Apache Kafka", colorClass: "text-grey-500" },
 ];
 
 const frontendSkillData: SkillIcon[] = [
@@ -150,6 +154,9 @@ const frontendSkillData: SkillIcon[] = [
   { Icon: SiTailwindcss, title: "TailwindCSS", colorClass: "text-sky-400" },
   { Icon: SiRedux, title: "Redux", colorClass: "text-purple-600" },
   { Icon: FaJsSquare, title: "JavaScript", colorClass: "text-yellow-400" },
+  { Icon: SiPostman, title: "Postman", colorClass: "text-orange-500" },
+  { Icon: SiGooglegemini , title: "Google Gemini", colorClass: "text-blue-500" },
+  { Icon: PiOpenAiLogo, title: "OpenAI", colorClass: "text-grey-300" },
 ];
 
 const experienceData: ExperienceItem[] = [
