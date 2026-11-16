@@ -156,16 +156,17 @@ const experienceData: ExperienceItem[] = [
   {
     title: "Nov 2024",
     content: {
-      position: "Associate Software Engineer",
+      position: "Software Engineer",
       company: "Accenture",
       location: "Hyderabad",
       date: "Nov 2024 - Present",
       keyResponsibilities: [
-        "Developed and maintained a scalable microservices application using Spring Boot, Node.js, and React to support critical import/export workflows and reliable cross-system data processing.",
-        "Troubleshot and resolved complex production incidents by tracing requests across backend services, SQL databases, Azure Service Bus DLQ, and logs, reducing issue recurrence and improving overall system reliability.",
-        "Collaborated with cross-functional teams during release cycles to drive root-cause analysis and code improvements, ensuring smooth Blue-Green deployments with minimal to zero downtime.",
+        "Worked across enterprise applications using Java (Dropwizard/Spring Boot), Node.js, React.js, Redis and Azure SQL, contributing to application enhancements and working across frontend and backend workflows.",
+        "Analysed and addressed backend application issues by tracing Java exceptions, debugging service interactions, examining SQL data and investigating cross-service integration behaviour.",
+        "Worked with Azure Service Bus queues, topics and DLQs to investigate asynchronous processing failures and validate message replay and downstream data synchronization.",
+        "Developed an AI-powered knowledge assistant using Spring Boot, Spring AI and RAG, applying embeddings and hybrid search to retrieve technical knowledge and historical incidents, reducing manual investigation effort."
       ],
-      technologies: ["React", "Spring Boot", "Node.js", "SQL"],
+      technologies: ["React", "Spring Boot", "Node.js", "Microservices", "Redis", "Azure SQL", "Azure Service Bus", "Spring AI", "RAG"],
     },
   },
   {
@@ -176,10 +177,10 @@ const experienceData: ExperienceItem[] = [
       location: "Hyderabad",
       date: "Mar 2024 - Nov 2024",
       keyResponsibilities: [
-        "Developed a full-stack internal productivity tool using React.js and Node.js to automate and streamline team workflows, resulting in improved operational efficiency and reduced manual effort.",
-        "Implemented Role-Based Authentication (RBAC) and integrated secure internal APIs in Node.js, ensuring controlled data access and reliable data management across multiple user roles.",
+        "Worked on an internal productivity application using React.js and Node.js, developing application features and making changes based on team requirements.",
+        "Implemented role-based access control and integrated internal APIs to manage access to application features and data based on user roles."
       ],
-      technologies: ["React.js", "Node.js", "MongoDB"],
+      technologies: ["React.js", "Node.js", "Role-based Access Control", "RESTful APIs"],
     },
   },
 ];
